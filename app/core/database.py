@@ -14,11 +14,27 @@ import hashlib
 import secrets
 from typing import List, Dict, Any, Optional, Tuple
 
-DB_PATH = os.path.join(os.path.dirname(os.path.dirname(os.path.dirname(__file__))), "data", "aegis.db")
+IS_VERCEL = bool(os.environ.get("VERCEL") or os.environ.get("VERCEL_ENV"))
+if IS_VERCEL:
+    TMP_DIR = "/tmp/aegis_data"
+    os.makedirs(TMP_DIR, exist_ok=True)
+    DB_PATH = os.path.join(TMP_DIR, "aegis.db")
+    ORIGINAL_DB = os.path.join(os.path.dirname(os.path.dirname(os.path.dirname(__file__))), "data", "aegis.db")
+    if os.path.exists(ORIGINAL_DB) and not os.path.exists(DB_PATH):
+        try:
+            import shutil
+            shutil.copy2(ORIGINAL_DB, DB_PATH)
+        except Exception:
+            pass
+else:
+    DB_PATH = os.path.join(os.path.dirname(os.path.dirname(os.path.dirname(__file__))), "data", "aegis.db")
 
 
 def get_db():
-    os.makedirs(os.path.dirname(DB_PATH), exist_ok=True)
+    try:
+        os.makedirs(os.path.dirname(DB_PATH), exist_ok=True)
+    except Exception:
+        pass
     conn = sqlite3.connect(DB_PATH, check_same_thread=False)
     conn.row_factory = sqlite3.Row
     return conn
