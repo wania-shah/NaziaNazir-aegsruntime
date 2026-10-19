@@ -1,11 +1,12 @@
 # AegisRuntime: Sector-Adaptable Runtime AI Intervention & Governance Agent
 > **Autonomous Point-of-Action Safety, Dynamic Branch Isolation, and Cryptographic Tool Gating for Mission-Critical AI Agents.**
 
-[![Tests](https://img.shields.io/badge/pytest-52%2F52%20passed-10b981?style=for-the-badge&logo=pytest)](file:///Users/esef/Desktop/Wania%20Stuff/Project_hackathon/tests)
+[![Live Demo](https://img.shields.io/badge/Live%20Demo-Vercel%20Production-000000?style=for-the-badge&logo=vercel)](https://aegisruntime.vercel.app)
+[![Tests](https://img.shields.io/badge/pytest-52%2F52%20passed-10b981?style=for-the-badge&logo=pytest)](https://github.com/wania-shah/NaziaNazir-aegsruntime)
 [![FastAPI](https://img.shields.io/badge/FastAPI-0.115+-009688?style=for-the-badge&logo=fastapi)](https://fastapi.tiangolo.com)
-[![Architecture](https://img.shields.io/badge/Architecture-Proof--of--Authority%20(PoA)-00f0ff?style=for-the-badge)](file:///Users/esef/Desktop/Wania%20Stuff/Project_hackathon/app/core/security.py)
-[![Database](https://img.shields.io/badge/Database-SQLite%20(Live%20WAL)-f59e0b?style=for-the-badge&logo=sqlite)](file:///Users/esef/Desktop/Wania%20Stuff/Project_hackathon/data/aegis.db)
-[![Status](https://img.shields.io/badge/Status-Hackathon%20Ready-7c3aed?style=for-the-badge)](file:///Users/esef/Desktop/Wania%20Stuff/Project_hackathon)
+[![Architecture](https://img.shields.io/badge/Architecture-Proof--of--Authority%20(PoA)-00f0ff?style=for-the-badge)](https://github.com/wania-shah/NaziaNazir-aegsruntime)
+[![Database](https://img.shields.io/badge/Database-SQLite%20(Live%20WAL)-f59e0b?style=for-the-badge&logo=sqlite)](https://github.com/wania-shah/NaziaNazir-aegsruntime)
+[![Status](https://img.shields.io/badge/Status-Hackathon%20Ready-7c3aed?style=for-the-badge)](https://github.com/wania-shah/NaziaNazir-aegsruntime)
 
 ---
 
